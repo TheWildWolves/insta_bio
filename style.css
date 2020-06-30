@@ -4,3 +4,13 @@
     height: 736px;
     background: #000000;
 }
+
+.logo{
+    position: absolute;
+width: 347px;
+height: 142px;
+left: 34px;
+top: 59px;
+
+background: url(images/logo.png);
+}
