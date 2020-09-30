@@ -1,43 +1,148 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #1b1b1b;
+    --color-primary-light: #222126;
+    --color-primary: #292731;
+    --color-primary-dark: #302d3c;
+    --color-primary-darker: #373347;
+    --color-secundary: #e4c28a;
+    --color-secundary-dark: #c5a971;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #e4c28a;
+    --color-text-title: #AFB3B2;
+    --color-text-complement: #b6b9bd;
+    --color-text-base: #bdbfc8;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    font-size: 60%;
+}
+
 body, html {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    background-image: url(images/background.png);
+    background-image: url('./images/background.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'logo' 'streamers' 'produtos' 'redessociais';
+    color: #e4c28a;
 }
 
 .logo {
-    position: relative;
-    width: 694px;
-    height: 284px;
-    margin-top: 100px;
-    background-image: url(images/logo.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    grid-area: logo;
+    width: 100%;
+    height: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-image {
     border: none;
-    opacity: 0.7;
+    width: 308px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.streamers {
+    grid-area: streamers;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos {
+    grid-area: produtos;
+    grid-row-start: initial;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
-    position: absolute;
-    width: 347px;
-    height: 63px;
-    left: 34px;
-    top: 219px;
-    opacity: 1;
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    width: 308px;
+    height: 69px;
+    border-radius: 0.8rem;
+    font: 700 30px Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1b1b1b;
+    transition: background-color 0.2s;
 }
 
-.info{
-    position: absolute;
-    width: 694px;
-    height: 694px;
-    top: 450px;
+.btn-background {
+    background: #e4c28a;
+}
+
+.btn-background:hover {
+    background: #c5a971;
+}
+
+.redessociais {
+    grid-area: redessociais;
+    grid-row-start: initial;
+    width: 100%;
+    height: 119px;
+    display: grid;
+    grid-template-areas: 'facebook instagram twitter ' 'twitch youtube discord';
+}
+
+.icon {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 90px;
+    color: #e4c28a;
+}
+
+.facebook {
+    
+    grid-area: facebook;
+}
+
+.instagram {
+    grid-area: instagram;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.youtube {
+    grid-area: youtube;
+}
+
+.twitch {
+    grid-area: twitch;
+}
+
+.discord {
+    grid-area: discord;
+}
+
+.fab {
+    margin-right: 10px;
+}
+
+.fas {
+    margin-right: 10px;
 }
