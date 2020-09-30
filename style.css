@@ -146,3 +146,25 @@ body, html {
 .fas {
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 1100px){
+    .btn{
+        width: 616px;
+        height: 138px;
+        font: 60px;
+    }
+    .streamers{
+        margin-bottom: 100px;
+    }
+    .produtos{
+        margin-bottom:80px
+    }
+    .icon{
+        font-size: 180px;
+    }
+    .logo .logo-image {
+        width: 616px;
+        height: 200px;
+        margin-bottom: 250px;
+    }
+}
