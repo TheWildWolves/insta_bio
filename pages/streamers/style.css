@@ -60,7 +60,7 @@ body, html {
     margin: auto;
     width: 70%;
     display: grid;
-    grid-template-areas: 'stryxw adventeeh brubruninha' 'fenix dynerk bruno' 'robesvaldo breno ';
+    grid-template-areas: 'stryxw adventeeh brubruninha' 'fenix dynerk bruno' 'robesvaldo breno breno';
     margin-top: 25px;
     margin-bottom: 25px;
     grid-gap: 25px;
@@ -113,6 +113,7 @@ footer p {
 .breno {
     grid-area: breno;
     background-image: url(../../images/streamers/Brennekton.png);
+    grid-column-end: left;
 }
 
 .adventeeh {

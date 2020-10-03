@@ -1,0 +1,227 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #1b1b1b;
+    --color-primary-light: #222126;
+    --color-primary: #292731;
+    --color-primary-dark: #302d3c;
+    --color-primary-darker: #373347;
+    --color-secundary: #e4c28a;
+    --color-secundary-dark: #c5a971;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #e4c28a;
+    --color-text-title: #AFB3B2;
+    --color-text-complement: #b6b9bd;
+    --color-text-base: #bdbfc8;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    font-size: 60%;
+}
+
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1b1b;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header''body' 'footer';
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    grid-area: header;
+    height: 200px;
+    width: 100%;
+    margin-bottom: -100px;
+    background-color: #1b1b1b;
+}
+
+.header p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 60px;
+    color: #e4c28a;
+}
+
+.body {
+    grid-area: body;
+    margin: auto;
+    width: 95%;
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    grid-gap: 0px;
+    grid-template-areas: 
+        'title-periferico title-periferico title-periferico title-periferico' 
+        'mouse teclado mousepad headset' 
+        'title-ebook title-ebook title-ebook title-ebook' 
+        'guia-caminho mindset legal legal' 
+        'title-livros title-livros title-livros title-livros' 
+        'livro-lux livro-ashe livro-runeterra entendi'
+}
+.livro-runeterra{
+    grid-area: livro-runeterra;
+}
+.livro-ashe{
+    grid-area: livro-ashe;
+}
+.livro-lux{
+    grid-area: livro-lux;
+}
+
+.title-periferico {
+    grid-area: title-periferico;
+}
+
+.title-ebook {
+    grid-area: title-ebook;
+}
+
+.title-livros{
+    grid-area: title-livros;
+}
+
+.guia-caminho {
+    grid-area: guia-caminho;
+}
+
+.mindset {
+    grid-area: mindset;
+}
+
+strong {
+    font-size: 18px;
+}
+
+.title-periferico, .title-ebook, .title-livros {
+    margin: 2%;
+    font-size: 30px;
+    color: #e4c28a;
+}
+
+.headset {
+    grid-area: headset;
+}
+
+.mousepad {
+    grid: mousepad;
+}
+
+.mouse {
+    grid-area: mouse;
+}
+
+.teclado {
+    grid-area: teclado;
+}
+
+.flex-center {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    size: 100%;
+    background-color: #1b1b1b;
+}
+
+p {
+    padding: 20px;
+    margin: auto;
+    font-size: 12px;
+    color: #1b1b1b;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #e4c28a;
+}
+
+@media only screen and (max-width: 1100px) {
+    .body {
+        grid-template-areas: 
+        'title-periferico' 
+        'mouse' 'teclado' 'mousepad' 'headset' 
+        'title-ebook' 
+        'guia-caminho' 'mindset' 
+        'title-livros'
+        'livro-lux' 'livro-ashe' 'livro-runeterra';
+        margin-bottom: 150px;
+        width: 100%
+    }
+    .header p{
+        font-size: 120px;
+    }
+    .header{
+        
+        margin-bottom: -20px;
+    }
+    .flex-center{
+        width: 800px;
+        height: 800px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .guia-caminho p, .mindset p{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    .title-periferico, .title-ebook, .title-livros{
+        font-size: 80px;
+        margin: 10px 10%;
+    }
+    p{
+        padding: 20px;
+        margin: auto;
+        font-size: 25px;
+        color: #1b1b1b;
+    }
+    strong{
+        font-size: 60px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+        
+    }
+    footer p {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
