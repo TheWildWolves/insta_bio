@@ -220,6 +220,10 @@ footer p {
         height: 400px;
         
     }
+    .livro-ashe img, .livro-runeterra img{
+        width: 350px;
+        height: 400px;
+    }
     footer p {
         font-size: 40px;
         margin-bottom: 40px;

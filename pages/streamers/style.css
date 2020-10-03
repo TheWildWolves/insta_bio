@@ -60,7 +60,7 @@ body, html {
     margin: auto;
     width: 70%;
     display: grid;
-    grid-template-areas: 'stryxw adventeeh brubruninha' 'fenix dynerk bruno' 'robesvaldo breno breno';
+    grid-template-areas: 'stryxw adventeeh brubruninha' 'fenix dynerk bruno' 'robesvaldo breno legal';
     margin-top: 25px;
     margin-bottom: 25px;
     grid-gap: 25px;
